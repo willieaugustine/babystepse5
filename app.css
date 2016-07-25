@@ -1,0 +1,325 @@
+/*this is a CSS Reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*HTML 5 reset for older browsers
+*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  header
+  ========================================
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: right;
+    padding: 50px 70px;
+    height: 290px;
+}
+
+.header h2 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 50px;
+    line-height: 43px;
+    font-weight:800;
+}
+
+/*
+  ========================================
+    COL 1 STYLING
+  ========================================
+*/
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6,
+.nav7 {
+    background: #d1d5d6;
+    border: 1px solid #fff;
+    border-right: 
+}
+
+.nav1:hover,
+.nav2:hover,
+.nav3:hover,
+.nav4:hover,
+.nav5:hover,
+.nav6:hover,
+.nav7:hover {
+    background: #fff;
+}
+
+.nav1 p,
+.nav2 p,
+.nav3 p,
+.nav4 p,
+.nav5 p,
+.nav6 p,
+.nav7 p {
+    color: #9ba0a4;
+    float: left;
+    font-size: 18px; 
+    padding-left: 75px;
+}
+
+
+.nav1 p:hover,
+.nav2 p:hover,
+.nav3 p:hover,
+.nav4 p:hover,
+.nav5 p:hover,
+.nav6 p:hover,
+.nav7 p:hover {
+    color: #36abe1;
+}
+
+.nav1 img,
+.nav2 img,
+.nav3 img,
+.nav4 img,
+.nav5 img,
+.nav6 img,
+.nav7 img {
+    padding: 15px;
+}
+
+.nav1 img:hover{
+    content: url(../images/icons/individual/icons_small_bs1_blue.png);
+}
+
+.nav2 img:hover{
+        content: url(../images/icons/individual/icons_small_bs2_blue.png);
+}
+
+.nav3 img:hover{
+        content: url(../images/icons/individual/icons_small_bs3_blue.png);
+}
+
+.nav4 img:hover{
+        content: url(../images/icons/individual/icons_small_bs4_blue.png);
+}
+
+.nav5 img:hover{
+        content: url(../images/icons/individual/icons_small_bs5_blue.png);
+}
+
+.nav6 img:hover{
+        content: url(../images/icons/individual/icons_small_bs6_blue.png);
+}
+
+.nav7 img:hover{
+        content: url(../images/icons/individual/icons_small_bs7_blue.png);
+}
+
+.sec1 p{
+    color: #9ba0a4;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: right;
+    padding-right: 40px;
+    
+}
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+.group {
+    padding-top: 60px
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2_1 {
+	width: 22.8%;
+}
+
+.span_1_of_2_2{
+width:  75.6%;  
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2_1,
+    .span_1_of_2_2 {
+		width: 100%; 
+	}
+}
+
+.step1_top img,
+.step2_top img,
+.step3_top img,
+.step4_top img,
+.step5_top img,
+.step6_top img,
+.step7_top img {
+    float: left;
+    padding-left: 70px;
+}
+
+.step1_top h1,
+.step2_top h1,
+.step3_top h1,
+.step4_top h1,
+.step5_top h1,
+.step6_top h1,
+.step7_top h1 {
+	font-size: 30px;
+	color: #36abe1;
+    padding-top: 10px;
+	
+}
+
+.step1_top p,
+.step2_top p,
+.step3_top p,
+.step4_top p,
+.step5_top p,
+.step6_top p,
+.step7_top p {
+    color: #5c6366;
+    text-align:left;
+	line-height: 20px;
+    padding-bottom: 24px;
+}
+
+.step1_top h1,
+.step1_top p,
+
+.step2_top h1,
+.step2_top p,
+
+.step3_top h1,
+.step3_top p,
+
+.step4_top h1,
+.step4_top p,
+
+.step5_top h1,
+.step5_top p,
+
+.step6_top h1,
+.step6_top p,
+
+.step7_top h1,
+.step7_top p {
+	padding-left: 165px;
+}
+
+.step1 h4,
+.step2 h4,
+.step3 h4,
+.step4 h4,
+.step5 h4, 
+.step6 h4,
+.step7 h4 {
+    font-family: ;
+    line-height: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 400px
+}
